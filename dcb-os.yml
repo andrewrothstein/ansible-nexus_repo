@@ -1,0 +1,11 @@
+---
+- archlinux_latest
+- debian_buster
+- debian_bullseye
+- fedora_36
+- fedora_37
+- rockylinux_8
+- rockylinux_9
+- ubuntu_bionic
+- ubuntu_focal
+- ubuntu_jammy

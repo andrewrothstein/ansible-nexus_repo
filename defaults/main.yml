@@ -1,0 +1,157 @@
+---
+# defaults file for nexus-repo
+nexus_repo_ver:
+  major: 3
+  minor: 59
+  patch: '0-01'
+
+nexus_repo_os_map:
+  Linux: unix
+  Darwin: mac
+  Windows: win64
+
+nexus_repo_mirror: http://download.sonatype.com/nexus
+
+nexus_repo_parent_install_dir: /usr/local
+
+nexus_repo_checksums:
+  '3.10.0-04':
+    # http://download.sonatype.com/nexus/3/nexus-3.10.0-04-unix.tar.gz.sha1
+    unix: sha1:94a1881e5642281c05bf370bd8bbfdeff4531b5f
+    # http://download.sonatype.com/nexus/3/nexus-3.10.0-04-mac.tgz.sha1
+    mac: sha1:7cc56a40898a4e6cfe99e41f42ca34b5b75de5f6
+    # http://download.sonatype.com/nexus/3/nexus-3.10.0-04-win64.zip.sha1
+    win64: sha1:5a4ee7915e8a21e38117b75b27e7347bde847a79
+  '3.14.0-04':
+    # http://download.sonatype.com/nexus/3/nexus-3.14.0-04-unix.tar.gz.sha1
+    unix: sha1:7e577cfd3c72bac488913d19dfad39e90019490f
+    # http://download.sonatype.com/nexus/3/nexus-3.14.0-04-mac.tgz.sha1
+    mac: sha1:b95eeaeb9555c31b66d19d2c8a6d2664cfd2e7f8
+    # http://download.sonatype.com/nexus/3/nexus-3.14.0-04-win64.zip.sha1
+    win64: sha1:1adcd03cc48e48a4587e78a4d891f13e657d13c0
+  '3.18.1-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.18.1-01-unix.tar.gz.sha1
+    unix: sha1:9972d4615d33dcf5eeb85ec9d04422c1d8dcc752
+    # http://download.sonatype.com/nexus/3/nexus-3.18.1-01-mac.tgz.sha1
+    mac: sha1:83ba6a2424d5ee478673d5a979f0fc683f4e8aee
+    # http://download.sonatype.com/nexus/3/nexus-3.18.1-01-win64.zip.sha1
+    win64: sha1:98fb912680ec6db52acf49cb03d674bc2848e04a
+  '3.20.1-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.20.1-01-unix.tar.gz.sha1
+    unix: sha1:5cabc748671dc510e4374548ac8c9b0f4b2517c1
+    # http://download.sonatype.com/nexus/3/nexus-3.20.1-01-mac.tgz.sha1
+    mac: sha1:91435276f6a14c2eb6850d1a2761d0845a95eb11
+    # http://download.sonatype.com/nexus/3/nexus-3.20.1-01-win64.zip.sha1
+    win64: sha1:c6e34d6525382803899dedc0007ed292a1330ed8
+  '3.41.1-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.41.1-01-unix.tar.gz.sha1
+    unix: sha1:39a0691ac26712ec933786c3d4020dac1b52bd49
+    # http://download.sonatype.com/nexus/3/nexus-3.41.1-01-mac.tgz.sha1
+    mac: sha1:6e0a93ee77387e17030025ce5c5d90cedad2276e
+    # http://download.sonatype.com/nexus/3/nexus-3.41.1-01-win64.zip.sha1
+    win64: sha1:5f7e65f43da2b5d2a4fbd74f13e76a551febd6f6
+  '3.44.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.44.0-01-unix.tar.gz.sha256
+    unix: sha256:1b508c4494845c27a8afd56a5b2065039a1867a5a6ce022f12251e0a9b358b76
+    # http://download.sonatype.com/nexus/3/nexus-3.44.0-01-mac.tgz.sha256
+    mac: sha256:e06135b2b8ca459fefb8546750d5de5fcf38ba86f605548a54002f7925e35e8a
+    # http://download.sonatype.com/nexus/3/nexus-3.44.0-01-win64.zip.sha256
+    win64: sha256:538625e30407df75e3676cd4711f5888c4ccffc50a6ee1f2ca96c5a4690f2901
+  '3.45.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.45.0-01-unix.tar.gz.sha256
+    unix: sha256:2124ce46c9453e016dd2410a2b5edfa415e2df200cc209baa839e4df7576c1ad
+    # http://download.sonatype.com/nexus/3/nexus-3.45.0-01-mac.tgz.sha256
+    mac: sha256:4abfe9fadc5db0655bb8416b905eba2cdac33ea4e7f5bf3d4585440266accd1e
+    # http://download.sonatype.com/nexus/3/nexus-3.45.0-01-win64.zip.sha256
+    win64: sha256:c0dcba79eb18501315b74d9438ecd3c7d3ac777901e146e7eecc22a981b11a5c
+  '3.46.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.46.0-01-unix.tar.gz.sha256
+    unix: sha256:0b12248441d5140fcb44337f4eef03a54b232a1c55137b123b0ff8c0e801339d
+    # http://download.sonatype.com/nexus/3/nexus-3.46.0-01-mac.tgz.sha256
+    mac: sha256:d725548ece75113d0dfa2ede1dafa8955fec943d9a54ad1013d02a99848e57b2
+    # http://download.sonatype.com/nexus/3/nexus-3.46.0-01-win64.zip.sha256
+    win64: sha256:2f94f50c8460ac31803cdd43d18084a8a55c0a16682427abd4cb09d1d7f8d9c5
+  '3.47.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.47.0-01-unix.tar.gz.sha256
+    unix: sha256:486c0db807b7e8afe2acf48d828c617856fc8dd78112043ccd8dcc0f255ddab2
+    # http://download.sonatype.com/nexus/3/nexus-3.47.0-01-mac.tgz.sha256
+    mac: sha256:9dd4db9771778406bc16786543f0bba45ff488bf7851a817c1bcd5eb39a18123
+    # http://download.sonatype.com/nexus/3/nexus-3.47.0-01-win64.zip.sha256
+    win64: sha256:605f373943f7c20c970a936720e97860fec35eda2afdc9affda097be80dd413a
+  '3.48.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.48.0-01-unix.tar.gz.sha256
+    unix: sha256:fa9e35acee4e57f77cd157e0dac396c8961fd56586bdc33ebd8dc603f31a0a10
+    # http://download.sonatype.com/nexus/3/nexus-3.48.0-01-mac.tgz.sha256
+    mac: sha256:81e339497efdc127c470f7a2d7dfb089ef3a46fe3c3082c904dcf6c61e6941e7
+    # http://download.sonatype.com/nexus/3/nexus-3.48.0-01-win64.zip.sha256
+    win64: sha256:97140653315c99a5006faeb8ff2f9aa7f2f8a21a03c704286db4050c0e4186b0
+  '3.50.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.50.0-01-unix.tar.gz.sha256
+    unix: sha256:95a1bb1676a9095f9a3a6e03ebf6fc15565c61470671fc362110caa14e71beab
+    # http://download.sonatype.com/nexus/3/nexus-3.50.0-01-mac.tgz.sha256
+    mac: sha256:13301387b1a50259444fc68e2c75ace10d2a9cc8547b927fbc6de5aef844c717
+    # http://download.sonatype.com/nexus/3/nexus-3.50.0-01-win64.zip.sha256
+    win64: sha256:09d3295cefdb225dcc34f8cb0a62f4a3476526979f7b454abd9f12ab4c8503e8
+  '3.51.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.51.0-01-unix.tar.gz.sha256
+    unix: sha256:60da6183622fe0507c00b192c404ce01f46a4b32a55985d83df07965f6f93881
+    # http://download.sonatype.com/nexus/3/nexus-3.51.0-01-mac.tgz.sha256
+    mac: sha256:8e6681d79ba7a51ca324e542730661c5f8f62c935c85c305a5a0e6a0fdb06569
+    # http://download.sonatype.com/nexus/3/nexus-3.51.0-01-win64.zip.sha256
+    win64: sha256:a95a64c340c32969540eb7ca5494259fe2c512249ecb82bcf718d0dbe5be2396
+  '3.52.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.52.0-01-unix.tar.gz.sha256
+    unix: sha256:f87766bb2ed606d5088c4059c8b804ddadfe2ff9403478b2d55441276b3af3a5
+    # http://download.sonatype.com/nexus/3/nexus-3.52.0-01-mac.tgz.sha256
+    mac: sha256:f3e97bc152caf8fb14fda19e87fa923d2369eb4c71f6969a9dbda624cf3e29ac
+    # http://download.sonatype.com/nexus/3/nexus-3.52.0-01-win64.zip.sha256
+    win64: sha256:22e40f149b07aaccb3a7ac67c99200df69072b96bdb87972ba5e0508e6794eb2
+  '3.53.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.53.0-01-unix.tar.gz.sha256
+    unix: sha256:a91f32f3a3f95611006978888f621164c0a02dda5dce6b099781b8819ab59075
+    # http://download.sonatype.com/nexus/3/nexus-3.53.0-01-mac.tgz.sha256
+    mac: sha256:37c887de47cc76ef4eb1349af48063f553e0a933b3fbc44d015ee4e7194f67a1
+    # http://download.sonatype.com/nexus/3/nexus-3.53.0-01-win64.zip.sha256
+    win64: sha256:b8039db72d61be13a680edd513f3b43cf8c63d778ea965405d2187f6783eb9be
+  '3.54.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.54.0-01-unix.tar.gz.sha256
+    unix: sha256:2ace2797beb5597ea0baccc3f0b8cb14a6b9f0ba63779d34b8b889a8cea658fa
+    # http://download.sonatype.com/nexus/3/nexus-3.54.0-01-mac.tgz.sha256
+    mac: sha256:f2294e6eeda1588755ec95e637e0bfe5341bb4badf565251ab8194cbbc02b7ee
+    # http://download.sonatype.com/nexus/3/nexus-3.54.0-01-win64.zip.sha256
+    win64: sha256:d77877e07f9f8ae88f78d341bb1a2a57c22971f6925ece6de3b529b995578d90
+  '3.55.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.55.0-01-unix.tar.gz.sha256
+    unix: sha256:fd6e320f781552512642bc1cbebb9c84bad2597605045932d9443bcec22cc671
+    # http://download.sonatype.com/nexus/3/nexus-3.55.0-01-mac.tgz.sha256
+    mac: sha256:7aac640a31f792f6f6223e19b972b30ce9026c4c9db94b39bf6e4cb95a364b35
+    # http://download.sonatype.com/nexus/3/nexus-3.55.0-01-win64.zip.sha256
+    win64: sha256:7f4a2bfda0320a3e7f3601127665d16036658e5316c9b03d8388be4aa1cad3b2
+  '3.56.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.56.0-01-unix.tar.gz.sha256
+    unix: sha256:72224300df72eae532c8ada918037314b3c4af0bed26b4e25b03dfa4227934ff
+    # http://download.sonatype.com/nexus/3/nexus-3.56.0-01-mac.tgz.sha256
+    mac: sha256:56c88eddf10c78cc2b4c2fe0568033b5caa96c8f6496d976ed17063b967f88f1
+    # http://download.sonatype.com/nexus/3/nexus-3.56.0-01-win64.zip.sha256
+    win64: sha256:4d51b4965082807735eee999e419a5634e2e612a44579dc8318d693aa9af9094
+  '3.57.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.57.0-01-unix.tar.gz.sha256
+    unix: sha256:d0f29f314399b0143c101ebaffb349596c087e96516b8f321ab045e37caf844d
+    # http://download.sonatype.com/nexus/3/nexus-3.57.0-01-mac.tgz.sha256
+    mac: sha256:c299e37c42b6809f720cb61f542088c5b6cbc668f5efb85fffacb1f2565678e4
+    # http://download.sonatype.com/nexus/3/nexus-3.57.0-01-win64.zip.sha256
+    win64: sha256:8966890107554f9ed4e3d4906a76f2b620fd483a71bf7e4fbc1f72ee3d743fe1
+  '3.58.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.58.0-01-unix.tar.gz.sha256
+    unix: sha256:859b0ce4d492e07b0f3c2188340862fc19311f0c9dc9280b751c3c6025d0af62
+    # http://download.sonatype.com/nexus/3/nexus-3.58.0-01-mac.tgz.sha256
+    mac: sha256:618c3b68c3c9e7e6c0f235715f4d17f5169646191b638d435a3ea43c2b43ddf3
+    # http://download.sonatype.com/nexus/3/nexus-3.58.0-01-win64.zip.sha256
+    win64: sha256:e1d1a49dde8e579c78fe06f90c018d604edc22940304d8602f5aff8df54550ba
+  '3.59.0-01':
+    # http://download.sonatype.com/nexus/3/nexus-3.59.0-01-unix.tar.gz.sha256
+    unix: sha256:19bc207fbf05e232d9c521e95cb7253e946a5e56521b828c4252a0b72f7262a8
+    # http://download.sonatype.com/nexus/3/nexus-3.59.0-01-mac.tgz.sha256
+    mac: sha256:9a063daa722c144e2a6503eb7ea5afc50a2670395016e99c1d5fb35dfcff8ed2
+    # http://download.sonatype.com/nexus/3/nexus-3.59.0-01-win64.zip.sha256
+    win64: sha256:7289b1ea11005e376c5bd8c766d101d8591fd5e16465e763409cecc8528eda7b

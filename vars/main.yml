@@ -1,0 +1,13 @@
+---
+# vars file for nexus-repo
+nexus_repo_os: '{{ nexus_repo_os_map[ansible_system] }}'
+nexus_repo_fq_ver: '{{ nexus_repo_ver.major }}.{{ nexus_repo_ver.minor }}.{{ nexus_repo_ver.patch }}'
+nexus_repo_name: nexus-{{ nexus_repo_fq_ver }}
+nexus_repo_tgz: '{{ nexus_repo_name }}-{{ nexus_repo_os }}.{{ nexus_repo_archive_type | default("tar.gz") }}'
+nexus_repo_tmp_tgz: '{{ nexus_repo_tmp_dir | default("/tmp") }}/{{ nexus_repo_tgz }}'
+
+nexus_repo_tgz_url: '{{ nexus_repo_mirror }}/{{ nexus_repo_ver.major }}/{{ nexus_repo_tgz }}'
+nexus_repo_checksum: '{{ nexus_repo_checksums[nexus_repo_fq_ver][nexus_repo_os] }}'
+
+nexus_repo_install_dir: '{{ nexus_repo_parent_install_dir }}/{{ nexus_repo_name }}'
+nexus_repo_link_dir: '{{ nexus_repo_parent_install_dir }}/nexus'
