@@ -5,7 +5,7 @@
   },
   {
     "OS": "debian",
-    "OS_VER": "buster"
+    "OS_VER": "bookworm"
   },
   {
     "OS": "debian",
@@ -13,11 +13,11 @@
   },
   {
     "OS": "fedora",
-    "OS_VER": "36"
+    "OS_VER": "39"
   },
   {
     "OS": "fedora",
-    "OS_VER": "37"
+    "OS_VER": "40"
   },
   {
     "OS": "rockylinux",
@@ -29,14 +29,10 @@
   },
   {
     "OS": "ubuntu",
-    "OS_VER": "bionic"
-  },
-  {
-    "OS": "ubuntu",
-    "OS_VER": "focal"
-  },
-  {
-    "OS": "ubuntu",
     "OS_VER": "jammy"
+  },
+  {
+    "OS": "ubuntu",
+    "OS_VER": "noble"
   }
 ]

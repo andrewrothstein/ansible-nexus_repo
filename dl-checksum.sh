@@ -27,4 +27,5 @@ dl_ver()
     dl $major_ver $fq_ver win64 zip
 }
 
-dl_ver 3 59 0-01
+# https://github.com/sonatype/nexus-public/releases
+dl_ver 3 70 1-02
